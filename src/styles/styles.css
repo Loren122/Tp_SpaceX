@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Aplica Roboto a toda la página */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* O el color que desees para el fondo */
+    color: #333;
+    /* Color del texto */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    /* Aplica Roboto a todos los encabezados */
+}
+
+.header-link {
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: inherit;
+    /* Hereda el color del texto del padre */
+}
+
+/* Opcional: Cambiar el color del texto al pasar el mouse */
+.header-link:hover {
+    color: #555;
+    /* Cambia a un color diferente si lo deseas */
+}
+
+.launches-container {
+    display: grid;
+    /* Utiliza grid layout */
+    grid-template-columns: repeat(4, 1fr);
+    /* Crea 4 columnas de igual ancho */
+    gap: 20px;
+    /* Espacio entre los elementos */
+    justify-items: center;
+    /* Centra los elementos en cada celda */
+    padding: 20px;
+    /* Espacio interno alrededor del contenedor */
+}
+
+.launch-item {
+    border: 1px solid #ccc;
+    /* Borde opcional */
+    padding: 10px;
+    /* Espacio interno */
+    text-align: center;
+    /* Centra el texto */
+    background-color: #f9f9f9;
+    /* Fondo opcional */
+    border-radius: 8px;
+    /* Bordes redondeados opcional */
+    transition: transform 0.2s;
+    /* Efecto de hover */
+}
+
+.launch-item:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom al pasar el mouse */
+}
+
+.launch-item img {
+    width: 100%;
+    /* Hace que la imagen ocupe el ancho completo del artículo */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 4px;
+    /* Bordes redondeados para la imagen */
+}
+
+.rocket-image {
+    width: 200px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+}
